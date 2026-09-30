@@ -84,6 +84,37 @@ This project is actively being developed. Future improvements include additional
 - scikit-learn
 - Matplotlib
 
+
+## Dataset
+
+The project uses historical Ethiopian Sidama coffee export price data.
+
+The dataset contains weekly observations with the following variables:
+
+| Variable | Description |
+|---|---|
+| `date` | Observation date |
+| `price_usd_lb` | Coffee price in USD per pound |
+| `origin` | Coffee origin |
+| `grade` | Coffee grade |
+| `process` | Processing method |
+| `export_type` | Export category |
+| `source` | Price data source |
+
+The dataset covers observations from 2021 to 2026 and focuses on Sidama coffee under Grade 1 and Grade 2 natural commercial categories.
+
+### Data Source
+
+The price data are based on EEM / ECTA minimum price records included in the dataset.
+
+### Target Variable
+
+The primary forecasting target is:
+
+`price_usd_lb`
+
+which represents the coffee price in US dollars per pound.
+
 ## Author
 
 *Samuel Birhanu Abebe*
