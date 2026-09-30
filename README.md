@@ -115,6 +115,39 @@ The primary forecasting target is:
 
 which represents the coffee price in US dollars per pound.
 
+
+
+## Methodology
+
+The project follows a time-series forecasting workflow:
+
+1. Load and inspect the historical coffee price data.
+2. Convert the `date` variable into a datetime format.
+3. Sort observations chronologically.
+4. Explore historical price patterns and trends.
+5. Prepare the time-series data for forecasting.
+6. Train forecasting models using historical observations.
+7. Evaluate predictions using appropriate forecasting metrics.
+8. Generate forecasts for future coffee prices.
+
+### Forecasting Approach
+
+The project uses statistical time-series methods to model historical Sidama coffee prices.
+
+The main forecasting approach is based on ARIMA (AutoRegressive Integrated Moving Average), which is designed to model temporal dependencies and trends in time-series data.
+
+The project also includes machine-learning components for comparison and forecasting analysis.
+
+### Train-Test Strategy
+
+Because this is a time-series problem, observations are kept in chronological order.
+
+Earlier observations are used for model training, while later observations are reserved for evaluating forecasting performance.
+
+This avoids randomly shuffling the data and helps prevent information from the future from being used to predict the past.
+
+
+
 ## Author
 
 *Samuel Birhanu Abebe*
