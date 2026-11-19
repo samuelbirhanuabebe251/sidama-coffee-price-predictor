@@ -1,4 +1,4 @@
-# Sidama Coffee Price Predictor
+# Sidama Coffee Price Predictors
 
 # Project Overview
 
